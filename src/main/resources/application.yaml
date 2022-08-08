@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db1
+    username: root
+    password: my-secret-pw
+  jpa:
+    hibernate:
+      multiTenancy: true
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+org:
+  hibernate:
+    MultiTenancyStrategy:
